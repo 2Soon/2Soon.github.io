@@ -145,6 +145,87 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/04/OneDrive%E6%8C%82%E8%BD%BD%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98%E7%9A%84%E5%9D%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/04/OneDrive%E6%8C%82%E8%BD%BD%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98%E7%9A%84%E5%9D%91/" class="post-title-link" itemprop="url">OneDrive挂载为本地硬盘的坑</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-10-04 19:11:09 / Modified: 19:12:16" itemprop="dateCreated datePublished" datetime="2020-10-04T19:11:09+08:00">2020-10-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在一年前，我用申请的office365账户搭配网盘程序搞了一个web端的网盘，可以下载OneDrive中的文件，放到了侧边栏的<a target="_blank" rel="noopener" href="https://doc.111five.com/">Document链接</a>，找到要下载的文件右键—&gt;在新窗口中打开，浏览器会开始下载文件，速度大约在1-2M，现在也还在正常使用。</p>
+<p><img src="http://img.111five.com/image-20201004182259667.png" alt="image-20201004182259667"></p>
+<p>然后今天又折腾把OneDrive挂载到本地硬盘，其实这东西也早就有了，只是一直拖着没实践，这里我用的是RaiDrive，安装好之后在“我的电脑”里的网络位置会有盘符出现。左边两个是斐讯N1刷了小钢炮系统之后开了Samba挂载的两块老硬盘，在家里连上路由器就能访问，手机使用“Mix”app也可以访问，还挺好用的。</p>
+<p>上边那个5T的Onedrive（Q:）是用Rclone挂载过来的，开始用了RaiDrive发现速度只有300K左右；</p>
+<p><img src="http://img.111five.com/image-20201004180511513.png" alt="image-20201004180511513"></p>
+<p>还以为是Rai的服务有问题，换了Rclone还是一个样，我想大概是OneDrive服务器在国外的锅，搜了搜有位老哥说“是国内薅羊毛的太多了，把微软在香港的CDN流量耗光了，所以才会这么慢，使用世纪互联运营的国内版不会出现这个问题”，想来还是挺有道理的，解决方案就是挂梯子，代理OneDrive的网络请求。</p>
+<p>其实这个我也早想到了，开了V2Ray也不起作用，我还试了SSTAP也没卵用emmm。。。</p>
+<p>主要是我从55R换到V2Ray找不到他的HTTP代理端口在哪，手上又没有合适的55R,折腾了半天，才发现HTTP端口就在主界面下方，我TM</p>
+<p><img src="http://img.111five.com/image-20201004180916293.png" alt="image-20201004180916293"></p>
+<p>然后在RaiOneDrive的设置里填好端口</p>
+<img src="http://img.111five.com/image-20201004181011604.png" alt="image-20201004181011604" style="zoom: 80%;" />
+
+<p>停止正在运行的云盘，单个OneDrive的设置里勾选代理</p>
+<img src="http://img.111five.com/image-20201004181050785.png" alt="image-20201004181050785" style="zoom: 80%;" />
+
+<p>成功之后这个样，会有一个网络的小图标</p>
+<img src="http://img.111five.com/image-20201004181241040.png" alt="image-20201004181241040" style="zoom:80%;" />
+
+
+
+<p>然后再拷贝文件测试，发现速度快多了，最快会飙到 10M左右，一般就是4-5M左右；</p>
+<p><img src="http://img.111five.com/image-20201004181456502.png" alt="image-20201004181456502"></p>
+<p>懒得去看是梯子的速度还是云盘的限速了，大功告成，今天没白折腾。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/29/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -605,7 +686,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
