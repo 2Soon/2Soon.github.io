@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-06 19:42:06" itemprop="dateModified" datetime="2020-10-06T19:42:06+08:00">2020-10-06</time>
+                <time title="Modified: 2020-10-06 20:22:30" itemprop="dateModified" datetime="2020-10-06T20:22:30+08:00">2020-10-06</time>
               </span>
 
           
@@ -191,27 +191,27 @@
 
       
           <p>在一年前，我用申请的office365账户搭配网盘程序搞了一个web端的网盘，可以下载OneDrive中的文件，放到了侧边栏的<a target="_blank" rel="noopener" href="https://doc.111five.com/">Document链接</a>，找到要下载的文件右键—&gt;在新窗口中打开，浏览器会开始下载文件，速度大约在1-2M，现在也还在正常使用。</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004182259667.png" alt="image-20201004182259667"></p>
+<p><img src="https://img2.111five.com/img/image-20201004182259667.png" alt="image-20201004182259667"></p>
 <p>然后今天又折腾把OneDrive挂载到本地硬盘，其实这东西也早就有了，只是一直拖着没实践，这里我用的是RaiDrive，安装好之后在“我的电脑”里的网络位置会有盘符出现。左边两个是斐讯N1刷了小钢炮系统之后开了Samba挂载的两块老硬盘，在家里连上路由器就能访问，手机使用“Mix”app也可以访问，还挺好用的。</p>
 <p>上边那个5T的Onedrive（Q:）是用Rclone挂载过来的，开始用了RaiDrive发现速度只有300K左右；</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004180511513.png" alt="image-20201004180511513"></p>
+<p><img src="https://img2.111five.com/img/image-20201004180511513.png" alt="image-20201004180511513"></p>
 <p>还以为是Rai的服务有问题，换了Rclone还是一个样，我想大概是OneDrive服务器在国外的锅，搜了搜有位老哥说“是国内薅羊毛的太多了，把微软在香港的CDN流量耗光了，所以才会这么慢，使用世纪互联运营的国内版不会出现这个问题”，想来还是挺有道理的，解决方案就是挂梯子，代理OneDrive的网络请求。</p>
 <p>其实这个我也早想到了，开了V2Ray也不起作用，我还试了SSTAP也没卵用emmm。。。</p>
 <p>主要是我从55R换到V2Ray找不到他的HTTP代理端口在哪，手上又没有合适的55R,折腾了半天，才发现HTTP端口就在主界面下方，我TM</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004180916293.png" alt="image-20201004180916293"></p>
+<p><img src="https://img2.111five.com/img/image-20201004180916293.png" alt="image-20201004180916293"></p>
 <p>然后在RaiOneDrive的设置里填好端口</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004181011604.png" alt="image-20201004181011604" style="zoom: 80%;" />
+<img src="https://img2.111five.com/img/image-20201004181011604.png" alt="image-20201004181011604" style="zoom: 80%;" />
 
 <p>停止正在运行的云盘，单个OneDrive的设置里勾选代理</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004181050785.png" alt="image-20201004181050785" style="zoom: 80%;" />
+<img src="https://img2.111five.com/img/image-20201004181050785.png" alt="image-20201004181050785" style="zoom: 80%;" />
 
 <p>成功之后这个样，会有一个网络的小图标</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004181241040.png" alt="image-20201004181241040" style="zoom:80%;" />
+<img src="https://img2.111five.com/img/image-20201004181241040.png" alt="image-20201004181241040" style="zoom:80%;" />
 
 
 
 <p>然后再拷贝文件测试，发现速度快多了，最快会飙到 10M左右，一般就是4-5M左右；</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201004181456502.png" alt="image-20201004181456502"></p>
+<p><img src="https://img2.111five.com/img/image-20201004181456502.png" alt="image-20201004181456502"></p>
 <p>懒得去看是梯子的速度还是云盘的限速了，大功告成，今天没白折腾。</p>
 
       
@@ -263,7 +263,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-06 19:41:14" itemprop="dateModified" datetime="2020-10-06T19:41:14+08:00">2020-10-06</time>
+                <time title="Modified: 2020-10-06 20:23:58" itemprop="dateModified" datetime="2020-10-06T20:23:58+08:00">2020-10-06</time>
               </span>
 
           
@@ -289,8 +289,8 @@
 <li>一致性</li>
 <li>可示的  (启发性：充分准确的操作提示。)</li>
 </ul>
-<h3 id="深泽直人设计的CD机"><a href="#深泽直人设计的CD机" class="headerlink" title="深泽直人设计的CD机"></a>深泽直人设计的CD机</h3><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/TB2TEyxapXXXXbaXXXXXXXXXXXX_!!2038648986.jpg" alt="img"></p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/014ff1554be80c000001bf723f78f0.jpg@2o.jpg" alt="img"></p>
+<h3 id="深泽直人设计的CD机"><a href="#深泽直人设计的CD机" class="headerlink" title="深泽直人设计的CD机"></a>深泽直人设计的CD机</h3><p><img src="https://img2.111five.com/img/TB2TEyxapXXXXbaXXXXXXXXXXXX_!!2038648986.jpg" alt="img"></p>
+<p><img src="https://img2.111five.com/img/014ff1554be80c000001bf723f78f0.jpg@2o.jpg" alt="img"></p>
 <blockquote>
 <p>我与MUJI结缘，最初的作品就是这个CD播放器。人们的生活，所有的方面其实都是被Integrate了，即被统一整合在一起的。不仅仅是产品本身，我们还感觉到“只要拉一下开关线，声音就像空气一般流淌起来”的这种融合一体的感受。从整体考量，正是成就MUJI的关键，而这个CD播放器，正是基于这样的考虑，并将其显著化后所得的结果。</p>
 <p>“Without Thought”这个词，意为“不自觉地”。例如，想要在没有伞架的地方把伞立起来放的话，那么只要让地面的凹槽和伞的顶端相匹配就好了。这样一来，无印良品就不会去考虑设置伞架，而仅仅是设计一条凹槽。MUJI就是从这一角度去考虑生活的。MUJI从人们不自觉地就会这么做的事情出发， 不断地思考日常生活中什么才是合理的。</p>
@@ -298,74 +298,74 @@
 </blockquote>
 <p>如挂壁式风扇的外形和拉绳开启/关闭，容易让使用者产生音乐如风一般迎面吹来的联系感。</p>
 <p>类似老式台灯的“拉一下电源线”开关</p>
-<h3 id="购物车手机商城APP案例"><a href="#购物车手机商城APP案例" class="headerlink" title="购物车手机商城APP案例"></a>购物车手机商城APP案例</h3><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/cda955f89cf9812a7284f86ccbbf7e4f.gif" alt="cda955f89cf9812a7284f86ccbbf7e4f" style="zoom:50%;" />
+<h3 id="购物车手机商城APP案例"><a href="#购物车手机商城APP案例" class="headerlink" title="购物车手机商城APP案例"></a>购物车手机商城APP案例</h3><img src="https://img2.111five.com/img/cda955f89cf9812a7284f86ccbbf7e4f.gif" alt="cda955f89cf9812a7284f86ccbbf7e4f" style="zoom:50%;" />
 
 
 
 
 
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/bc25df54d408c4f4d09ae2783abe3a32.gif" alt="bc25df54d408c4f4d09ae2783abe3a32" style="zoom:50%;" />
+<img src="https://img2.111five.com/img/bc25df54d408c4f4d09ae2783abe3a32.gif" alt="bc25df54d408c4f4d09ae2783abe3a32" style="zoom:50%;" />
 
 
 
 <p>下方导航栏图标使用自然匹配例如：购物车、个人中心、发现、放大镜搜索，点击图标会动态或者颜色改变。</p>
 <p>如果网络异常时提示</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/u=63572467,2882652272&fm=15&gp=0.jpg" alt="img"></p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/p_4459.jpg" alt="p_4459"></p>
+<p><img src="https://img2.111five.com/img/u=63572467,2882652272&fm=15&gp=0.jpg" alt="img"></p>
+<p><img src="https://img2.111five.com/img/p_4459.jpg" alt="p_4459"></p>
 <p>个人中心，会员页面，皇冠代表会员、金币表示积分</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/c0dc5f8f67881ed8b69b22e96830cf2b.png" alt="c0dc5f8f67881ed8b69b22e96830cf2b" style="zoom:50%;" />
+<img src="https://img2.111five.com/img/c0dc5f8f67881ed8b69b22e96830cf2b.png" alt="c0dc5f8f67881ed8b69b22e96830cf2b" style="zoom:50%;" />
 
 
 
 <p>弹窗</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/4aaf466271881ef6b24862408e7c1d44.jpg" alt="4aaf466271881ef6b24862408e7c1d44" style="zoom:50%;" />
+<img src="https://img2.111five.com/img/4aaf466271881ef6b24862408e7c1d44.jpg" alt="4aaf466271881ef6b24862408e7c1d44" style="zoom:50%;" />
 
 
 
 <h3 id="keep界面"><a href="#keep界面" class="headerlink" title="keep界面"></a>keep界面</h3><p>「开始跑步」作为最重要的按钮，面积最大，颜色为鲜艳的品牌绿，按钮所处位置最容易操作（费茨定律可以解释）。</p>
 <p>在跑步的运动场景下，很容易受到灯光、路况等的影响，『暂停』与『结束』分为两步设计，有效避免误操作。减少用户做决定的时间。</p>
 <p>当选项增加，做决定的时间也增加。</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/avmqcSDee0AZdfGHBLdr.png" alt="img"></p>
+<p><img src="https://img2.111five.com/img/avmqcSDee0AZdfGHBLdr.png" alt="img"></p>
 <h3 id="补充一个输入框的设计"><a href="#补充一个输入框的设计" class="headerlink" title="补充一个输入框的设计"></a>补充一个输入框的设计</h3><p><a target="_blank" rel="noopener" href="http://www.woshipm.com/pd/4131217.html">交互设计拆解：文本框</a></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/100840125">交互设计补充2</a></p>
-<h3 id="手势设计"><a href="#手势设计" class="headerlink" title="手势设计"></a>手势设计</h3><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/0691d60bc543635fce5114e37150864e.jpg" alt="0691d60bc543635fce5114e37150864e" style="zoom:50%;" />
+<h3 id="手势设计"><a href="#手势设计" class="headerlink" title="手势设计"></a>手势设计</h3><img src="https://img2.111five.com/img/0691d60bc543635fce5114e37150864e.jpg" alt="0691d60bc543635fce5114e37150864e" style="zoom:50%;" />
 
 
 
-<h3 id="汽车"><a href="#汽车" class="headerlink" title="汽车"></a>汽车</h3><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/1c0c88e2dfbd4a1f266b33893842fc26.jpg" alt="1c0c88e2dfbd4a1f266b33893842fc26" style="zoom: 67%;" />
+<h3 id="汽车"><a href="#汽车" class="headerlink" title="汽车"></a>汽车</h3><img src="https://img2.111five.com/img/1c0c88e2dfbd4a1f266b33893842fc26.jpg" alt="1c0c88e2dfbd4a1f266b33893842fc26" style="zoom: 67%;" />
 
 
 
 <p>按下用力小的按钮键程设计的长，按键力度大的键程短。</p>
 <p>仪表盘</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/b79d7d9a0ed816af854e4b079d57b333.jpg" alt="b79d7d9a0ed816af854e4b079d57b333" style="zoom: 80%;" />
+<img src="https://img2.111five.com/img/b79d7d9a0ed816af854e4b079d57b333.jpg" alt="b79d7d9a0ed816af854e4b079d57b333" style="zoom: 80%;" />
 
 <p>油量、灯光、车速、转向</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/cc05927c34793f1f07901e97c972c7b5.jpg" alt="cc05927c34793f1f07901e97c972c7b5"></p>
-<h3 id="路标设计"><a href="#路标设计" class="headerlink" title="路标设计"></a>路标设计</h3><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/2d0d841deb5fdb2c5ef70135c4aaa77a.jpg" alt="2d0d841deb5fdb2c5ef70135c4aaa77a" style="zoom:50%;" />
+<p><img src="https://img2.111five.com/img/cc05927c34793f1f07901e97c972c7b5.jpg" alt="cc05927c34793f1f07901e97c972c7b5"></p>
+<h3 id="路标设计"><a href="#路标设计" class="headerlink" title="路标设计"></a>路标设计</h3><img src="https://img2.111five.com/img/2d0d841deb5fdb2c5ef70135c4aaa77a.jpg" alt="2d0d841deb5fdb2c5ef70135c4aaa77a" style="zoom:50%;" />
 
 
 
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/593af870cb4f87aacfa8428310ffbea6.jpg" alt="593af870cb4f87aacfa8428310ffbea6" style="zoom:67%;" />
+<img src="https://img2.111five.com/img/593af870cb4f87aacfa8428310ffbea6.jpg" alt="593af870cb4f87aacfa8428310ffbea6" style="zoom:67%;" />
 
 
 
-<h3 id="水龙头"><a href="#水龙头" class="headerlink" title="水龙头"></a>水龙头</h3><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/1A2B4134D1869A9E88A7FC8ABD57DB69.png" alt="img"></p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/BFCAB72665E0AABAD69C65CE08429AC5.jpg" alt="img" style="zoom:50%;" />
+<h3 id="水龙头"><a href="#水龙头" class="headerlink" title="水龙头"></a>水龙头</h3><p><img src="https://img2.111five.com/img/1A2B4134D1869A9E88A7FC8ABD57DB69.png" alt="img"></p>
+<img src="https://img2.111five.com/img/BFCAB72665E0AABAD69C65CE08429AC5.jpg" alt="img" style="zoom:50%;" />
 
 <p>而这款水龙头的另一大特色，也在于这款精华的木板之上，它不仅是一个开关，更是一个“杯托”，将水杯置于木板之上，我们不用再接水的过程中一直拿着水杯，水杯放置其上便可自然去睡，抬起水杯则自然关闭，而木板的设计，也体现了设计师注重细节的态度，还原原木元素，铜质原料转印木质纹理，不仅保证了它的寿命，更让它在视觉上为人们带来享受。</p>
 <p>通常来说，使用水龙头时少不了旋拧开关的动作，而贝朗却把杠杆原理运用到产品设计当中，让杯子只需要像是坐跷跷板式的放上平板，既有饮用水流出;而一旦拿走杯子，龙头便会自动关闭。这样的设计让Hand-free Cup Filler不仅看起来非常直观、简洁，而且也把喝水这件事变得生动有趣起来，让人忍不住多喝几次水。</p>
-<h3 id="游戏手柄"><a href="#游戏手柄" class="headerlink" title="游戏手柄"></a>游戏手柄</h3><h4 id="常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；"><a href="#常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；" class="headerlink" title="常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；"></a>常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；</h4><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/789314e5625a9ffd1e5ac589933f1ba1.jpg" alt="Der Xbox Wireless Controller ist zu 100% kompatibel mit der neuen Xbox Series X. So kannst Du deinen Xbox Wireless Controller problemlos weiter nutzen, wenn Du 2020 auf die neue Konsolengeneration umsteigst. Spiele Deine Lieblingsgames außerdem auf Windows 10 PCs, Tablets, Android-* & anderen mobilen Endgeräten mit Bluetooth®-Technologie. Damit ist der Xbox Wireless Controller das ideale Zubehör zum Xbox Konsolen-Streaming. *kompatibel mit Android 6.0 oder höher." style="zoom: 80%;" />
+<h3 id="游戏手柄"><a href="#游戏手柄" class="headerlink" title="游戏手柄"></a>游戏手柄</h3><h4 id="常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；"><a href="#常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；" class="headerlink" title="常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；"></a>常规游戏手柄，左侧控制人物移动，右侧射击、人物的技能；</h4><img src="https://img2.111five.com/img/789314e5625a9ffd1e5ac589933f1ba1.jpg" alt="Der Xbox Wireless Controller ist zu 100% kompatibel mit der neuen Xbox Series X. So kannst Du deinen Xbox Wireless Controller problemlos weiter nutzen, wenn Du 2020 auf die neue Konsolengeneration umsteigst. Spiele Deine Lieblingsgames außerdem auf Windows 10 PCs, Tablets, Android-* & anderen mobilen Endgeräten mit Bluetooth®-Technologie. Damit ist der Xbox Wireless Controller das ideale Zubehör zum Xbox Konsolen-Streaming. *kompatibel mit Android 6.0 oder höher." style="zoom: 80%;" />
 
 
 
 
 
-<h4 id="王者荣耀、吃鸡游戏里设计按键布局"><a href="#王者荣耀、吃鸡游戏里设计按键布局" class="headerlink" title="王者荣耀、吃鸡游戏里设计按键布局"></a>王者荣耀、吃鸡游戏里设计按键布局</h4><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20201006193939930.png" alt="image-20201006193939930"></p>
-<h4 id="任天堂Switch手柄设计"><a href="#任天堂Switch手柄设计" class="headerlink" title="任天堂Switch手柄设计"></a>任天堂Switch手柄设计</h4><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200929153612567.png" alt="image-20200929153612567" style="zoom: 50%;" />
+<h4 id="王者荣耀、吃鸡游戏里设计按键布局"><a href="#王者荣耀、吃鸡游戏里设计按键布局" class="headerlink" title="王者荣耀、吃鸡游戏里设计按键布局"></a>王者荣耀、吃鸡游戏里设计按键布局</h4><p><img src="https://img2.111five.com/img/image-20201006193939930.png" alt="image-20201006193939930"></p>
+<h4 id="任天堂Switch手柄设计"><a href="#任天堂Switch手柄设计" class="headerlink" title="任天堂Switch手柄设计"></a>任天堂Switch手柄设计</h4><img src="https://img2.111five.com/img/image-20200929153612567.png" alt="image-20200929153612567" style="zoom: 50%;" />
 
 <p>可拆分成两个手柄，以及配合额外的套件组成经典手柄和方向盘。</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200929155139810.png" alt="image-20200929155139810" style="zoom: 67%;" />
+<img src="https://img2.111five.com/img/image-20200929155139810.png" alt="image-20200929155139810" style="zoom: 67%;" />
 
 
 
@@ -376,19 +376,19 @@
 
 
 <h3 id="遥控器设计"><a href="#遥控器设计" class="headerlink" title="遥控器设计"></a>遥控器设计</h3><p>从常规复杂的遥控器转为简洁设计</p>
-<img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/bc54717f5fb22b9f1218013253f2e7e6.jpg" alt="T1 2.4GHz Air Mouse Full Keyboard Backlight,  #AirMouse"  />
+<img src="https://img2.111five.com/img/bc54717f5fb22b9f1218013253f2e7e6.jpg" alt="T1 2.4GHz Air Mouse Full Keyboard Backlight,  #AirMouse"  />
 
 
 
 
 
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/561342e1dd1e62f422f4f550cdc9f756.jpg" alt="www.engadget.com/products/xiaomi/box/"></p>
-<h3 id="科技、智能家居"><a href="#科技、智能家居" class="headerlink" title="科技、智能家居"></a>科技、智能家居</h3><h4 id="智能音箱-天猫精灵"><a href="#智能音箱-天猫精灵" class="headerlink" title="智能音箱-天猫精灵"></a>智能音箱-天猫精灵</h4><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/O1CN01s2TJBz299xIn920Dn_!!0-rate.jpg_400x400.jpg" alt="img"></p>
+<p><img src="https://img2.111five.com/img/561342e1dd1e62f422f4f550cdc9f756.jpg" alt="www.engadget.com/products/xiaomi/box/"></p>
+<h3 id="科技、智能家居"><a href="#科技、智能家居" class="headerlink" title="科技、智能家居"></a>科技、智能家居</h3><h4 id="智能音箱-天猫精灵"><a href="#智能音箱-天猫精灵" class="headerlink" title="智能音箱-天猫精灵"></a>智能音箱-天猫精灵</h4><p><img src="https://img2.111five.com/img/O1CN01s2TJBz299xIn920Dn_!!0-rate.jpg_400x400.jpg" alt="img"></p>
 <p>待机状态无灯光，听到“天猫精灵”触发词蓝色灯光会亮起，并可设置“我在、叮咚”等提示词，表示进入倾听状态，此时可控制其播放音乐；</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/O1CN014u34aw1Vrqlzi0NDa_!!0-rate.jpg_400x400.jpg" alt="img"></p>
+<p><img src="https://img2.111five.com/img/O1CN014u34aw1Vrqlzi0NDa_!!0-rate.jpg_400x400.jpg" alt="img"></p>
 <p>再次说出“天猫精灵”触发词可控制音乐停止，或者按下顶部按键即可停止播放音乐，此时灯光为红色；</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/O1CN019UC78X1Vrqlv1rcV5_!!0-rate.jpg_400x400.jpg" alt="img"></p>
-<h4 id="智能窗帘"><a href="#智能窗帘" class="headerlink" title="智能窗帘"></a>智能窗帘</h4><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200929161341365.png" alt="image-20200929161341365" style="zoom:50%;" />
+<p><img src="https://img2.111five.com/img/O1CN019UC78X1Vrqlv1rcV5_!!0-rate.jpg_400x400.jpg" alt="img"></p>
+<h4 id="智能窗帘"><a href="#智能窗帘" class="headerlink" title="智能窗帘"></a>智能窗帘</h4><img src="https://img2.111five.com/img/image-20200929161341365.png" alt="image-20200929161341365" style="zoom:50%;" />
 
 <p>搭配智能音箱、手机APP实现自动开合，</p>
 <p>联动智能灯光、空调、热水器实现下班自动打开，人离开房间自动关闭。</p>
@@ -446,7 +446,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-06 19:27:29" itemprop="dateModified" datetime="2020-10-06T19:27:29+08:00">2020-10-06</time>
+                <time title="Modified: 2020-10-06 20:23:21" itemprop="dateModified" datetime="2020-10-06T20:23:21+08:00">2020-10-06</time>
               </span>
 
           
@@ -466,28 +466,28 @@
 <h3 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h3><ol>
 <li>git  status</li>
 </ol>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924205612636.png" alt="image-20200924205612636"></p>
+<p><img src="https://img2.111five.com/img/image-20200924205612636.png" alt="image-20200924205612636"></p>
 <p><img src="http://img.111five.com/image-20200924205638192.png" alt="image-20200924205638192"></p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924205717226.png" alt="image-20200924205717226"></p>
+<p><img src="https://img2.111five.com/img/image-20200924205717226.png" alt="image-20200924205717226"></p>
 <ol start="2">
 <li>git  status  -s使输出信息更简洁</li>
 </ol>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924205824770.png" alt="image-20200924205824770"></p>
+<p><img src="https://img2.111five.com/img/image-20200924205824770.png" alt="image-20200924205824770"></p>
 <ol start="3">
 <li>将未跟踪状态的文件转为已跟踪状态    git  add  tt.txt</li>
 </ol>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924210709117.png" alt="image-20200924210709117"></p>
+<p><img src="https://img2.111five.com/img/image-20200924210709117.png" alt="image-20200924210709117"></p>
 <ol start="4">
 <li>将暂存区的文件取消暂存    git  reset</li>
 </ol>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924211157191.png" alt="image-20200924211157191"></p>
+<p><img src="https://img2.111five.com/img/image-20200924211157191.png" alt="image-20200924211157191"></p>
 <p>要想提交的文件，必须先提交到暂存区。</p>
 <ol start="5">
 <li><p>git commit -m “update README.md”</p>
 <p>若不加    -m    则自动打开文件，输入i编辑，：wq退出</p>
 </li>
 </ol>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924213636055.png" alt="image-20200924213636055"></p>
+<p><img src="https://img2.111five.com/img/image-20200924213636055.png" alt="image-20200924213636055"></p>
 <ol start="6">
 <li><p>git  rm  tt.txt    此时只是在工作区删除，需要commit -t提交才是删除</p>
 </li>
@@ -498,10 +498,10 @@
 </ol>
 <h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><ol>
 <li><p>查看</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924220752392.png" alt="image-20200924220752392"></p>
+<p><img src="https://img2.111five.com/img/image-20200924220752392.png" alt="image-20200924220752392"></p>
 </li>
 <li><p>添加远程仓库</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924221505402.png" alt="image-20200924221505402"></p>
+<p><img src="https://img2.111five.com/img/image-20200924221505402.png" alt="image-20200924221505402"></p>
 </li>
 <li><p>从远程克隆</p>
 <p>git  clone</p>
@@ -510,15 +510,15 @@
 <li><p>移除无效仓库</p>
 <p>git  remote  rm</p>
 <p>只是从本地移除远程仓库，并不会真正影响到远程仓库</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924222231585.png" alt="image-20200924222231585"></p>
+<p><img src="https://img2.111five.com/img/image-20200924222231585.png" alt="image-20200924222231585"></p>
 </li>
 <li><p>从远程仓库抓取与拉取</p>
 <p>git  fetch 是从远程仓库获取最新版本到本地仓库，不会自动merge</p>
 </li>
 </ol>
 <p>   git  pull 是从远程仓库获取最新版本并merge到本地仓库</p>
-<p>   <img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924223530786.png" alt="image-20200924223530786"></p>
-<p>   <img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924223557726.png" alt="image-20200924223557726"></p>
+<p>   <img src="https://img2.111five.com/img/image-20200924223530786.png" alt="image-20200924223530786"></p>
+<p>   <img src="https://img2.111five.com/img/image-20200924223557726.png" alt="image-20200924223557726"></p>
 <ol start="6">
 <li><p>推送到远程仓库</p>
 <p>git push origin master</p>
@@ -532,7 +532,7 @@
 <p>git branch</p>
 <p><strong>列出所有远程分支</strong></p>
 <p>git branch -r</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924224459539.png" alt="image-20200924224459539"></p>
+<p><img src="https://img2.111five.com/img/image-20200924224459539.png" alt="image-20200924224459539"></p>
 <p><strong>列出所i有本地分支和远程分支</strong></p>
 <p>git branch -a</p>
 </li>
@@ -549,15 +549,15 @@
 </li>
 <li><p>合并分支，合并之后为master</p>
 <p>在master下    git merge b1</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924230311642.png" alt="image-20200924230311642"></p>
+<p><img src="https://img2.111five.com/img/image-20200924230311642.png" alt="image-20200924230311642"></p>
 </li>
 </ol>
 <ol start="6">
 <li><p>删除分支</p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924230532350.png" alt="image-20200924230532350"></p>
+<p><img src="https://img2.111five.com/img/image-20200924230532350.png" alt="image-20200924230532350"></p>
 </li>
 </ol>
-<h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924231054323.png" alt="image-20200924231054323"></p>
+<h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><p><img src="https://img2.111five.com/img/image-20200924231054323.png" alt="image-20200924231054323"></p>
 <h3 id="git标签"><a href="#git标签" class="headerlink" title="git标签"></a>git标签</h3><p>发布关键版本时，打标签</p>
 <ol>
 <li><p>列出所有标签</p>
@@ -583,9 +583,9 @@
 <p>git push origin :refs/tags/[tag]</p>
 </li>
 </ol>
-<h2 id="TortoiseGit-小乌龟"><a href="#TortoiseGit-小乌龟" class="headerlink" title="TortoiseGit    小乌龟"></a>TortoiseGit    小乌龟</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><h3 id="将文件添加到暂存区"><a href="#将文件添加到暂存区" class="headerlink" title="将文件添加到暂存区"></a>将文件添加到暂存区</h3><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924233257413.png" alt="image-20200924233257413"></p>
-<h3 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h3><p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924233407775.png" alt="image-20200924233407775"></p>
-<p><img src="https://xhnotes.oss-cn-beijing.aliyuncs.com/img/image-20200924233528745.png" alt="image-20200924233528745"></p>
+<h2 id="TortoiseGit-小乌龟"><a href="#TortoiseGit-小乌龟" class="headerlink" title="TortoiseGit    小乌龟"></a>TortoiseGit    小乌龟</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><h3 id="将文件添加到暂存区"><a href="#将文件添加到暂存区" class="headerlink" title="将文件添加到暂存区"></a>将文件添加到暂存区</h3><p><img src="https://img2.111five.com/img/image-20200924233257413.png" alt="image-20200924233257413"></p>
+<h3 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h3><p><img src="https://img2.111five.com/img/image-20200924233407775.png" alt="image-20200924233407775"></p>
+<p><img src="https://img2.111five.com/img/image-20200924233528745.png" alt="image-20200924233528745"></p>
 <h3 id="推送本地仓库至远程仓库"><a href="#推送本地仓库至远程仓库" class="headerlink" title="推送本地仓库至远程仓库"></a>推送本地仓库至远程仓库</h3><p>右键直接推送</p>
 <h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>​    </p>
 <h1 id="git-clone拒绝访问的解决"><a href="#git-clone拒绝访问的解决" class="headerlink" title="git clone拒绝访问的解决"></a>git clone拒绝访问的解决</h1><p>网上说原因是git被配置了代理,首先查看git代理设置</p>
